@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Website</title>
+  <style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1f2937;
+      --secondary: #111827;
+      --accent: #6b7280;
+    }
+
+    body {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    button, .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    button:hover, .btn:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    h1, h2, h3, h4 {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: white;
+      text-shadow: 0 0 5px var(--accent);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .py-12 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .p-4 {
+      padding: 1rem;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+
+    .p-10 {
+      padding: 2.5rem;
+    }
+
+    .pr-4 {
+        padding-right: 1rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+
+    .mb-10 {
+      margin-bottom: 2.5rem;
+    }
+
+    .mb-16 {
+      margin-bottom: 4rem;
+    }
+
+    .mt-8 {
+      margin-top: 2rem;
+    }
+
+    .mt-12 {
+      margin-top: 3rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+    }
+
+    .text-5xl {
+      font-size: 3rem;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+    }
+
+    .text-sm {
+      font-size: 0.875rem;
+    }
+
+    .font-bold {
+      font-weight: 700;
+    }
+
+    .font-semibold {
+      font-weight: 600;
+    }
+
+    .font-extrabold {
+      font-weight: 800;
+    }
+
+    .leading-relaxed {
+      line-height: 1.75;
+    }
+
+    .max-w-3xl {
+      max-width: 48rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .space-x-6 > * + * {
+      margin-left: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    .gap-8 {
+      gap: 2rem;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .overflow-hidden {
+      overflow: hidden;
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+
+    .shadow-lg {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .shadow-inner {
+      box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .opacity-90 {
+      opacity: 0.9;
+    }
+
+    .opacity-80 {
+      opacity: 0.8;
+    }
+
+    .opacity-10 {
+      opacity: 0.1;
+    }
+
+    .-z-10 {
+      z-index: -10;
+    }
+
+    .inset-0 {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bg-gradient-to-br {
+      background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    }
+
+    .from-primary {
+        --tw-gradient-from: var(--primary); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(31, 41, 55, 0));
+    }
+
+    .via-secondary {
+        --tw-gradient-stops: var(--tw-gradient-from), var(--secondary), var(--tw-gradient-to, rgba(17, 24, 39, 0));
+    }
+
+    .to-accent {
+        --tw-gradient-to: var(--accent);
+    }
+
+    .hover\:text-accent:hover {
+      color: var(--accent);
+    }
+
+    .transition {
+      transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    .duration-300 {
+      transition-duration: 0.3s;
+    }
+
+    .transform {
+      transform: var(--tw-transform);
+    }
+
+    .hover\:scale-105:hover {
+      --tw-scale-x: 1.05;
+      --tw-scale-y: 1.05;
+    }
+
+    .hover\:scale-102:hover {
+      --tw-scale-x: 1.02;
+      --tw-scale-y: 1.02;
+    }
+
+    @media (min-width: 768px) {
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    /* Custom animations */
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .animate-fade-in-delay {
+      animation: fadeIn 1s ease-out 0.5s forwards;
+      opacity: 0;
+    }
+
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+    }
+
+    .animate-slide-up-delay-100 {
+      animation: slideUp 0.8s ease-out 0.2s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Glassmorphism specific styles */
+    .glass-card {
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Softer shadow for glass effect */
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: all 0.3s ease-in-out;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+  </style>
+
+  </style>
+</head>
+<body>
+  <header class="p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">👨‍💼 ジョージ2の男磨き</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-accent transition duration-300">はじめに</a></li>
+          <li><a href="#elements" class="hover:text-accent transition duration-300">男磨きの要素</a></li>
+          <li><a href="#approach" class="hover:text-accent transition duration-300">コーチングの特徴</a></li>
+          <li><a href="#results" class="hover:text-accent transition duration-300">変化の声</a></li>
+          <li><a href="#contact" class="hover:text-accent transition duration-300">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-12 px-4">
+
+    <section id="hero" class="text-center mb-16 relative overflow-hidden rounded-lg p-10 section">
+      <h2 class="text-5xl font-extrabold mb-6 animate-fade-in">メンズコーチ　ジョージ2がサポートする男磨き ✨</h2>
+      <p class="text-xl leading-relaxed max-w-3xl mx-auto opacity-90 animate-fade-in-delay">男磨きとは、外見の向上だけでなく、内面の充実にまで及ぶ、幅広い自己改善の取り組みを指します。メンズコーチ ジョージ2は、この男磨きにおいて、男性が自信を持ち、魅力的な存在へとなるための実践的なアドバイスと具体的なサポートを提供しています。</p>
+      <button class="btn mt-8 text-lg px-8 py-4 transform hover:scale-105 duration-300">今すぐ相談する 🚀</button>
+      <div class="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent opacity-10 -z-10"></div>
+    </section>
+
+    <section id="about" class="mb-16 section rounded-lg p-8 transform hover:scale-102 transition duration-300 glass-card">
+      <h3 class="text-4xl font-bold mb-8 text-center">「男磨き」とは？ 紳士への道 🎩</h3>
+      <p class="text-lg leading-relaxed mb-6">男磨きとは、外見の向上だけでなく、内面の充実にまで及ぶ、幅広い自己改善の取り組みを指します。メンズコーチ ジョージ2は、この男磨きにおいて、男性が自信を持ち、魅力的な存在へとなるための実践的なアドバイスと具体的なサポートを提供しています。</p>
+    </section>
+
+    <section id="elements" class="mb-16">
+      <h3 class="text-4xl font-bold mb-10 text-center">ジョージ2が提唱する男磨きの要素 🌟</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="section p-8 rounded-lg shadow-lg glass-card transform hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold mb-4">1. 外見の改善 👕</h4>
+          <p class="mb-4">これは、清潔感のある身だしなみ、自分に似合うファッション、体型に合わせたトレーニング、そして適切なスキンケアやヘアケアを含みます。</p>
+          <p class="text-sm opacity-80">人は見た目で第一印象を判断することが多く、外見を整えることは、社会生活や人間関係においてプラスに作用すると考えています。</p>
+        </div>
+
+        <div class="section p-8 rounded-lg shadow-lg glass-card transform hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold mb-4">2. 内面の充実 🧠</h4>
+          <p class="mb-4">ここには、コミュニケーション能力の向上、知識や教養の習得、精神的な強さの育成、そして目標設定と達成に向けた努力が含まれます。</p>
+          <p class="text-sm opacity-80">例えば、初対面の人との会話が苦手な方には、効果的な会話術や傾聴力を養うトレーニングを提案します。また、自信の欠如から行動できない方には、ポジティブ思考を促す心理的なアプローチや、小さな成功体験を積み重ねることで自己肯定感を高める方法を指南します。</p>
+        </div>
+
+        <div class="section p-8 rounded-lg shadow-lg glass-card transform hover:scale-105 transition duration-300">
+          <h4 class="text-2xl font-semibold mb-4">3. ライフスタイルの見直し 🌳</h4>
+          <p class="mb-4">健康的な食生活、十分な睡眠、趣味や自己投資の時間の確保など、バランスの取れた生活を送ることが、心身ともに充実した男磨きには不可欠であると説きます。</p>
+          <p class="text-sm opacity-80">時間の使い方や目標設定など、具体的なプランニングを通じて、クライアントが自律的に行動できるよう支援します。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="approach" class="mb-16 section rounded-lg p-8 glass-card">
+      <h3 class="text-4xl font-bold mb-8 text-center">ジョージ2のコーチングスタイル 💪</h3>
+      <p class="text-lg leading-relaxed mb-6">メンズコーチングにおけるジョージ2の特徴は、個々のクライアントのニーズや状況に合わせたパーソナルなアプローチです。一律のテンプレートを押し付けるのではなく、カウンセリングを通じて、クライアントが抱える悩みや目標を深く理解し、それに基づいたオーダーメイドのプログラムを提案します。</p>
+      <p class="text-lg leading-relaxed">時には厳しいフィードバックも辞さず、クライアントの成長を真剣に願う姿勢が、多くの男性から支持されています。</p>
+    </section>
+
+    <section id="results" class="mb-16">
+      <h3 class="text-4xl font-bold mb-10 text-center">クライアントの声：変革の物語 📈</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="section p-8 rounded-lg shadow-lg glass-card animate-slide-up">
+          <p class="text-xl italic mb-4">「ジョージ2のサポートを受けた男性たちは、外見的な変化だけでなく、内面からくる自信や前向きな姿勢を身につけ、仕事やプライベートにおいて新たな可能性を切り開いています。」</p>
+          <p class="text-right font-semibold">- クライアントA</p>
+        </div>
+        <div class="section p-8 rounded-lg shadow-lg glass-card animate-slide-up-delay-100">
+          <p class="text-xl italic mb-4">「恋愛面においては、異性との関わり方に自信を持ち、より良い関係を築けるようになったという声も多く聞かれます。」</p>
+          <p class="text-right font-semibold">- クライアントB</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="text-center section rounded-lg p-10 glass-card">
+      <h3 class="text-4xl font-bold mb-8">継続は力なり：生涯のパートナーシップ 🤝</h3>
+      <p class="text-xl leading-relaxed max-w-3xl mx-auto mb-8">男磨きは一度きりのイベントではなく、継続的な自己投資です。メンズコーチ ジョージ2は、男性が一生を通じて自分自身を磨き続け、より豊かな人生を送るための伴走者として、その役割を果たしています。</p>
+      <p class="text-xl leading-relaxed max-w-3xl mx-auto">彼のコーチングは、単に「モテる」ためだけでなく、男性としてのあるべき姿を追求し、自己実現を目指す人々にとって、力強い原動力となるでしょう。</p>
+    </section>
+
+  </main>
+
+  <footer class="bg-secondary text-center p-8 mt-12 shadow-inner">
+    <p>&copy; 2023 メンズコーチ ジョージ2. All rights reserved.</p>
+  </footer>
+
+  <script>
+  <script>
+    // スムーズスクロール
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // フェードインアニメーションのトリガー
+    const sections = document.querySelectorAll('.section, main > section');
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // heroセクションのボタンクリックイベント
+    document.querySelector('.btn').addEventListener('click', function() {
+      alert('お問い合わせフォームへ移動します！ (実際にはフォームがここに表示されます)');
+      // ここに実際のお問い合わせフォームへの遷移ロジックを追加
+    });
+  </script>
+  </script>
+</body>
+</html>
